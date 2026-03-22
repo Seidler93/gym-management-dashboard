@@ -1,11 +1,9 @@
 .navbar {
   height: 64px;
   padding: 0 24px;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   background: var(--surface);
   border-bottom: 1px solid var(--border);
 }
@@ -25,6 +23,7 @@
 
 .navbar__link {
   background: none;
+  text-decoration: none;
   border: none;
   color: var(--text);
   font-weight: 500;
@@ -35,6 +34,21 @@
 
 .navbar__link:hover {
   background: var(--hover);
+}
+
+.navbar__link--active {
+  background: var(--primary);
+  text-decoration: none;
+  border: none;
+  color: var(--text);
+  font-weight: 500;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+.navbar__link--active:hover {
+  background: var(--primary-hover);
 }
 
 /* RIGHT */

@@ -1,5 +1,6 @@
-import Navbar from "./components/NavBar"
+import Navbar from "./components/Navbar"
 import "./styles/layout.css"
+import AppRouter from "./routes/AppRouter"
 function App() {
 
   return (
@@ -7,7 +8,7 @@ function App() {
       <Navbar/>
 
       <main className="app__content">
-        <h1>Dashboard</h1>
+        <AppRouter/>
       </main>
     </div>
   )

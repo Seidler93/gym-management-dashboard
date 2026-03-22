@@ -1,8 +1,12 @@
 import "../styles/navbar.css"
-
+import { NavLink } from "react-router-dom";
 export default function Navbar() {
 
-  const links = ["Dashboard", "Members", "Attendance" ];
+const links = [
+  { label: "Dashboard", path: "/dashboard" },
+  { label: "Members", path: "/members" },
+  { label: "Attendance", path: "/attendance" },
+];
   
   return (
     <nav className="navbar">
@@ -12,9 +16,15 @@ export default function Navbar() {
 
       <div className="navbar__center">
         {links.map((link) => (
-          <button key={link} className="navbar__link">
-            {link}
-          </button>
+          <NavLink
+            key={link.path}
+            to={link.path}
+            className={({ isActive }) =>
+              isActive ? "navbar__link--active" : "navbar__link"
+            }
+          >
+            {link.label}
+          </NavLink>
         ))}
       </div>
 

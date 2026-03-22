@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ROOT VARIABLES */
+:root {
+  --bg: #0f172a;
+  --surface: #111827;
+  --surface-light: #1f2937;
+
+  --primary: #2563eb;
+  --primary-hover: #1d4ed8;
+
+  --text: #f9fafb;
+  --text-light: #9ca3af;
+
+  --border: #1f2937;
+  --hover: #1f2937;
+
+  --radius: 12px;
+}
+
+/* BASE STYLES */
+body {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* TYPOGRAPHY */
+h1 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+p {
+  color: var(--text-light);
+}
+
+button {
+  font-family: inherit;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--surface-light);
+  border-radius: 4px;
+}

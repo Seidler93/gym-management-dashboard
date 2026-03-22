@@ -4,7 +4,7 @@
   flex-direction: column;
 }
 
-.app__content {
+.page-content {
   flex: 1;
   padding: 24px;
 }
